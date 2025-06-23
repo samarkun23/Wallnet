@@ -1,5 +1,6 @@
 import Aurora from "../component/Aurora-background/Aurora";
 import Navbar from "../component/Navbar";
+import SidebarRight from "../component/SidebarRight/SidebarRight";
 
 export default function Dashboard() {
     return (
@@ -11,6 +12,7 @@ export default function Dashboard() {
                 speed={1}
             />
             <Navbar />
+            <SidebarRight />
         </div>
     )
 }
