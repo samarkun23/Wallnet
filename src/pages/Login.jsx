@@ -1,16 +1,28 @@
-import {useNavigate} from 'react-router-dom'
-export default function Login() {
-    const navigate = useNavigate();
+import { useNavigate } from 'react-router-dom'
+import Aurora from "../component/Aurora-background/Aurora"
 
-    function handleLogin(e) {
-        e.preventDefault();
-        localStorage.setItem("wallnet-user", "true");
-        navigate("/dashboard")
-    }
+
+export default function Login() {
+  const navigate = useNavigate();
+
+  function handleLogin(e) {
+    e.preventDefault();
+    localStorage.setItem("wallnet-user", "true");
+    navigate("/dashboard")
+  }
 
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-[#353535] via-[#0f172a] to-[#020617]">
+
+      <Aurora
+        colorStops={["#120255", "#CFCFCF", "#120255"]}
+        blend={1}
+        amplitude={1.0}
+        speed={1}
+      />
+
+      {/* Login Form  */}
       <form className="w-full max-w-md backdrop-blur-xl bg-black/30 border border-white/10 p-10 rounded-2xl shadow-2xl" onSubmit={handleLogin}>
         <div className="text-center font-extrabold text-3xl text-white mb-8 tracking-wider">
           WellNet
