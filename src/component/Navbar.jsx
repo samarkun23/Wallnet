@@ -3,7 +3,7 @@ export default function Navbar() {
     return (
         <nav className="w-full h-16 px-6 flex items-center justify-between bg-black/30 backdrop-blur border-b border-white/10 text-white">
             {/* Logo */}
-            <div className="font-bold text-xl tracking-wide cursor-pointer">WellNet</div>
+            <div className="font-bold text-xl tracking-wide cursor-pointer hover:text-blue-100">WellNet</div>
 
             {/* Right Icons */}
             <div className="flex items-center gap-10">
