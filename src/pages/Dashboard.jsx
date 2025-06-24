@@ -1,6 +1,7 @@
 import Aurora from "../component/Aurora-background/Aurora";
 import Sidebar from "../component/LeftSidePanel/LeftSidebar";
 import Navbar from "../component/Navbar";
+import SidebarRight from "../component/SidebarRight/SidebarRight";
 
 export default function Dashboard() {
     return (
@@ -22,10 +23,13 @@ export default function Dashboard() {
                         {/* Dashboard Components go here */}
                         {/* <StatCards /> */}
                         {/* <Graph /> */}
+                        <SidebarRight />
                         {/* <QuoteCard /> */}
                     </main>
                 </div>
             </div>
-        </div>
+
+
+        </div >
     );
 }
